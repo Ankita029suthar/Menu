@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Menu design</title>
+     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+     <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+     <div class="hero">
+          <div class="navbar">
+               <img src="shuttermenu/logo.png" class="logo">
+               <img src="shuttermenu/menu.png" class="menu" id="menuIcon">
+          </div>
+          <div class="text-box">
+               <h1>Shutter Menu Design</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Rem voluptate ipsum, est nisi alias
+                    maiores
+                    iste minima facilis magni ducimus.</p>
+          </div>
+
+
+          <div class="row">
+               <div id="leftcol">
+                    <ul>
+                         <li>HOME</li>
+                         <li>ABOUT US</li>
+                         <li>PRICING</li>
+                         <li>BOOKING</li>
+                         <li>CONTACT</li>
+                    </ul>
+               </div>
+               <div id="rightcol">
+                    <div>
+                         <i class="fab fa-facebook"></i>
+                         <i class="fab fa-instagram"></i>
+                         <i class="fab fa-twitter"></i>
+                         <i class="fab fa-pinterest"></i>
+                         <i class="fab fa-youtube"></i>
+                    </div>
+
+                    <img src="shuttermenu/close.png" id="closeIcon">
+               </div>
+          </div>
+     </div>
+</body>
+<script>
+     var menuIcon = document.getElementById("menuIcon");
+     var closeIcon = document.getElementById("closeIcon");
+     var leftcol = document.getElementById("leftcol");
+     var rightcol = document.getElementById("rightcol");
+
+     menuIcon.onclick = function () {
+          leftcol.style.transform = "translatex(0px)";
+          rightcol.style.transform = "translatex(0px)";
+     }
+     closeIcon.onclick = function () {
+          leftcol.style.transform = "translatex(-100%)";
+          rightcol.style.transform = "translatex(100%)";
+     }
+</script>
+
+</html>
